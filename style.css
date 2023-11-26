@@ -16,6 +16,7 @@ ul,
 ol {
   margin-top: 0;
 }
+
 .wrapper {
   width: 95%;
   margin-left: auto;
@@ -91,6 +92,7 @@ hr {
 
 .content {
   text-align: center;
+  font-size: 12px;
 }
 
 .border {
@@ -98,4 +100,52 @@ hr {
   width: 10%;
   margin-left: auto;
   margin-right: auto;
+}
+
+img {
+  height: 200px;
+}
+.section-3 {
+  width: 100%;
+}
+.img-box {
+  width: 100%;
+}
+.up {
+  display: flex;
+  /* display: inline-block; */
+  margin-bottom: 50px;
+  margin-left: 50px;
+  margin-right: 50px;
+  justify-content: center;
+}
+
+.down {
+  display: flex;
+  margin-bottom: 50px;
+  margin-left: 50px;
+  margin-right: 50px;
+  justify-content: center;
+}
+
+.coast {
+  flex-basis: 40%;
+  margin-right: 20px;
+}
+
+.island {
+  flex-basis: 50%;
+}
+
+.ballon {
+  flex-basis: 50%;
+  margin-right: 20px;
+}
+
+.mountain {
+  flex-basis: 40%;
+}
+
+.section-4 {
+  background-color: #f7f7f7;
 }
