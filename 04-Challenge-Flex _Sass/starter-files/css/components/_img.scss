@@ -1,0 +1,57 @@
+@use "../abstracts/mixins" as mix;
+@use "../abstracts/variables" as var;
+
+.img-box {
+  @include mix.tablet-styles {
+    width: 100%;
+    flex-direction: row;
+    height: 90vh;
+  }
+
+  width: 70%;
+  display: flex;
+  margin-left: auto;
+  flex-wrap: wrap;
+  .inner-box {
+    @include mix.tablet-styles {
+      flex-wrap: wrap;
+      width: 100%;
+      flex-basis: 50%;
+    }
+
+    @include mix.mobile-l-styles {
+      flex-basis: 100%;
+      flex-direction: wrap;
+    }
+    position: relative;
+    flex-basis: 33.33%;
+  }
+  .overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: 0.5s ease;
+    background-color: var.$background-color-base;
+    &:hover {
+      opacity: 1;
+    }
+    .text {
+      width: 100%;
+      color: black;
+      font-size: 20px;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      text-align: center;
+    }
+    hr {
+      width: 50%;
+    }
+  }
+}
