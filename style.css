@@ -1,0 +1,29 @@
+body {
+  margin: 0;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+/* img {
+  width: 100%;
+} */
+
+.background {
+  background-image: url("./images/image-01.jpg");
+  background-position: bottom;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  height: 50vh;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("./images/image-01.jpg");
+  height: calc(100vh- 46px);
+}
+
+.size {
+  text-align: center;
+  width: 100px !important;
+  height: 100px !important;
+}
