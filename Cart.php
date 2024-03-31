@@ -23,7 +23,7 @@ class Cart
             $amount = $cartItem['amount'];
             $item = $cartItem['item'];
             $itemName = $item->getName();
-            $itemPrice = floatval(preg_replace('/[^0-9.]+/', '', $item->getPrice())); // Extract numeric value from price string
+            $itemPrice = floatval(preg_replace('/[^0-9.]+/', '', $item->getPrice()));
 
             $totalPrice += $amount * $itemPrice;
             echo "$itemName | $amount | total= " . ($amount * $itemPrice) . " denars <hr>";
