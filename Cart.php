@@ -29,7 +29,7 @@ class Cart
             echo "$itemName | $amount | total= " . ($amount * $itemPrice) . " denars <hr>";
         }
 
-        echo "Final price amount: $totalPrice <hr>";
+        echo "Final price amount: $totalPrice denars <br>";
     }
 
 }
