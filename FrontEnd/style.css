@@ -1,0 +1,23 @@
+
+body {
+    box-sizing: border-box;
+    margin-top: 0;
+}
+
+.background {
+    background-image: url("../Design/georgie-cobbs-bKjHgo_Lbpo-unsplash.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+
+}
+
+.background-two {
+    background-image: url("../Design/damian-zaleski-RYyr-k3Ysqg-unsplash.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+
+}
