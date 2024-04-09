@@ -11,32 +11,111 @@
 <body>
 <div class="container-fluid background-two d-flex justify-content-center">
     <div class="row">
-        <div class="col-ms">
-            <h1 class="  py-3 text-muted">You are one step away from your webpage</h1>
+        <div class="text-center">
+            <h1 class="fw-bold py-3 mt-4 text-muted">You are one step away from your webpage</h1>
         </div>
+        <div class="container-fluid mb-5 ">
 
-<!--        <div class="row">-->
-<!--            <div class="col-md w-30" >-->
-<!--                <form action="" class="d-flex flex-column w-30">-->
-<!--                    <label for="cover-image-url">Cover Image URL</label>-->
-<!--                    <input type="text" id="cover-image-url" name="cover-image-url">-->
-<!--                    <label for="cover-image-url">Cover Image URL</label>-->
-<!--                    <input type="text" id="cover-image-url" name="cover-image-url">-->
-<!--                </form>-->
-<!--            </div>-->
-<!--        </div>-->
-<!--    </div>-->
+            <form method="POST"
+                  class=" d-flex justify-content-center rounded  form-group justify-content-space-around px-5 ">
+                <!--First form-->
+                <div class="col-md-3 py-5 px-5 bg-light ">
+                    <label for="cover-image-url" class="mb-2">Cover Image URL</label>
+                    <input type="text" class="form-control" id="cover-image-url" name="cover-image-url">
 
-<!--    <div class="row">-->
-<!--        <div class="col-md w-30" >-->
-<!--            <form action="" class="d-flex flex-column w-30">-->
-<!--                <label for="cover-image-url">Cover Image URL</label>-->
-<!--                <input type="text" id="cover-image-url" name="cover-image-url">-->
-<!--                <label for="cover-image-url">Cover Image URL</label>-->
-<!--                <input type="text" id="cover-image-url" name="cover-image-url">-->
-<!--            </form>-->
-<!--        </div>-->
-<!--    </div>-->
+
+                    <label for="main-title-of-page" class="mb-2">Main Title of Page</label>
+                    <input type="text" class="form-control" id="main-title-of-page" name="main-title-of-page">
+
+
+                    <label for="subtitle-of-page" class="mb-2">Subtitle of Page</label>
+                    <input type="text" class="form-control" id="subtitle-of-page" name="subtitle-of-page">
+
+
+                    <label for="something-about you" class="mb-2">Something about you</label>
+                    <textarea name="something-about-you" id="something-about you" cols="30" rows="2"
+                              class="form-control"></textarea>
+
+
+                    <label for="your-telephone-number" class="mb-2">Your telephone number</label>
+                    <input type="number" id="your-telephone-number" name="your-telephone-number" class="form-control">
+
+
+                    <label for="location" class="mb-2">Location</label>
+                    <input type="text" id="location" name="location" class="form-control">
+
+
+                    <label for="services" class="mt-5">Do you provide services or products?</label>
+                    <select class="form-select " aria-label="Services" name="services" id="services">
+                        <option selected>Services</option>
+                        <option value="1">Yes</option>
+                        <option value="2">No</option>
+                    </select>
+
+                </div>
+
+
+                <!--Second form-->
+                <div class="col-md-3 py-5 px-5 bg-light">
+                    <p>Provide url for an image and description of your service/product:</p>
+                    <label for="image-url" class="mb-2">Image URL</label>
+                    <input type="text" class="form-control" id="image-url" name="image-url">
+
+
+                    <label for="desc-service" class="mb-2">Description of service/product</label>
+                    <textarea name="desc-service" id="desc-service" cols="30" rows="2"
+                              class="form-control"></textarea>
+
+                    <label for="image-url-two" class="mb-2">Image URL</label>
+                    <input type="text" class="form-control" id="image-url-two" name="image-url-two">
+
+                    <label for="desc-service-two" class="mb-2">Description of service/product</label>
+                    <textarea name="desc-service" id="desc-service-two" cols="30" rows="2"
+                              class="form-control"></textarea>
+
+
+                    <label for="image-url-three" class="mb-2">Image URL</label>
+                    <input type="text" class="form-control" id="image-url-three" name="image-url-three">
+
+
+                    <label for="desc-service-three" class="mb-2">Description of service/product</label>
+                    <textarea name="desc-service" id="desc-service-three" cols="30" rows="2"
+                              class="form-control"></textarea>
+
+                </div>
+
+                <!--Third form-->
+                <div class="col-md-3 py-5 px-5 bg-light   ">
+                    <label for="desc-company" class="mb-2">Provide a description of your company,something people should
+                        be aware of before they contanct you:</label>
+                    <textarea name="desc-company" id="desc-company" cols="30" rows="2"
+                              class="form-control"></textarea>
+
+
+                    <label for="linkedin" class="mb-2">Linkedin</label>
+                    <input type="text" class="form-control" id="linkedin" name="linkedin">
+
+
+                    <label for="facebook" class="mb-2">Facebook</label>
+                    <input type="text" class="form-control" id="facebook" name="facebook">
+
+                    <label for="twitter" class="mb-2">Twitter</label>
+                    <input type="text" class="form-control" id="twitter" name="twitter">
+
+                    <label for="google-plus" class="mb-2">Google+</label>
+                    <input type="text" class="form-control" id="google-plus" name="google-plus">
+
+                    <input type="submit" class="mt-5 btn btn-warning form-control text-white">
+
+                </div>
+
+
+            </form>
+
+
+        </div>
+    </div>
+
 </div>
 
 
