@@ -1,24 +1,28 @@
-
 body {
-    box-sizing: border-box;
-    margin-top: 0;
+  box-sizing: border-box;
+  margin-top: 0;
 }
 
 .background {
-    background-image: url("../Design/georgie-cobbs-bKjHgo_Lbpo-unsplash.jpg");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 100vh;
-
+  background-image: url("../Design/georgie-cobbs-bKjHgo_Lbpo-unsplash.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
 }
 
 .background-two {
-    background-image: url("../Design/damian-zaleski-RYyr-k3Ysqg-unsplash.jpg");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 100vh;
-
+  background-image: url("../Design/damian-zaleski-RYyr-k3Ysqg-unsplash.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
 }
 
+.background-three {
+  background-image: url("../Design/alesia-kaz-XLm6-fPwK5Q-unsplash.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 70vh;
+}

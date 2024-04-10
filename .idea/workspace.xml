@@ -5,7 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="bb7b5e0f-ab4a-4dff-8889-c513db339833" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FrontEnd/pageThree.html" beforeDir="false" afterPath="$PROJECT_DIR$/FrontEnd/pageThree.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/FrontEnd/pageTwo.html" beforeDir="false" afterPath="$PROJECT_DIR$/FrontEnd/pageTwo.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/FrontEnd/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/FrontEnd/style.css" afterDir="false" />
     </list>
@@ -94,7 +96,8 @@
       <workItem from="1711992843405" duration="42000" />
       <workItem from="1712072130597" duration="28000" />
       <workItem from="1712590074051" duration="6275000" />
-      <workItem from="1712672954508" duration="8706000" />
+      <workItem from="1712672954508" duration="8831000" />
+      <workItem from="1712760538158" duration="1763000" />
     </task>
     <servers />
   </component>
