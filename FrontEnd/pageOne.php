@@ -16,7 +16,7 @@
         <div class="col">
             <h1 class="text-center display-5">Create your very own web page. </h1>
             <h2 class=" display-6 text-muted">All you need to do is fill up a form!</h2>
-            <a href="./pageTwo.html" class="btn btn-light px-4 ">Start</a>
+            <a href="./pageTwo.php" class="btn btn-light px-4 ">Start</a>
         </div>
     </div>
 </div>
