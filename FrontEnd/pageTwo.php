@@ -1,3 +1,4 @@
+
 <!doctype html>
 <html lang="en">
 <head>
@@ -16,40 +17,39 @@
         </div>
         <div class="container-fluid ">
 
-            <form method="POST"
+            <form action="formAction.php" method="POST"
                   class=" d-flex justify-content-center rounded  form-group justify-content-space-around px-5 ">
                 <!--First form-->
                 <div class="col-md-3 py-5 px-5 bg-light ">
-                    <label for="cover-image-url" class="mb-2">Cover Image URL</label>
-                    <input type="text" class="form-control" id="cover-image-url" name="cover-image-url">
+                    <label for="cover_image_url" class="mb-2">Cover Image URL</label>
+                    <input type="text" class="form-control" id="cover_image_url" name="cover_image_url" required>
 
 
-                    <label for="main-title-of-page" class="mb-2">Main Title of Page</label>
-                    <input type="text" class="form-control" id="main-title-of-page" name="main-title-of-page">
+                    <label for="main_title_of_page" class="mb-2">Main Title of Page</label>
+                    <input type="text" class="form-control" id="main_title_of_page" name="main_title_of_page" required>
 
 
-                    <label for="subtitle-of-page" class="mb-2">Subtitle of Page</label>
-                    <input type="text" class="form-control" id="subtitle-of-page" name="subtitle-of-page">
+                    <label for="subtitle_of_page" class="mb-2">Subtitle of Page</label>
+                    <input type="text" class="form-control" id="subtitle_of_page" name="subtitle_of_page" required>
 
 
-                    <label for="something-about you" class="mb-2">Something about you</label>
-                    <textarea name="something-about-you" id="something-about you" cols="30" rows="2"
-                              class="form-control"></textarea>
+                    <label for="something_about_you" class="mb-2">Something about you</label>
+                    <textarea name="something_about_you" id="something_about_you" cols="30" rows="2"
+                              class="form-control" required></textarea>
 
 
-                    <label for="your-telephone-number" class="mb-2">Your telephone number</label>
-                    <input type="number" id="your-telephone-number" name="your-telephone-number" class="form-control">
+                    <label for="your_telephone_number" class="mb-2">Your telephone number</label>
+                    <input type="tel" id="your_telephone_number" name="your_telephone_number" class="form-control" required>
 
 
                     <label for="location" class="mb-2">Location</label>
-                    <input type="text" id="location" name="location" class="form-control">
+                    <input type="text" id="location" name="location" class="form-control" required>
 
 
                     <label for="services" class="mt-5">Do you provide services or products?</label>
-                    <select class="form-select " aria-label="Services" name="services" id="services">
-                        <option selected>Services</option>
-                        <option value="1">Yes</option>
-                        <option value="2">No</option>
+                    <select class="form-select " aria-label="Services" name="services" id="services" required>
+                        <option value="services">Services</option>
+                        <option value="products">Products</option>
                     </select>
 
                 </div>
@@ -58,54 +58,53 @@
                 <!--Second form-->
                 <div class="col-md-3 py-5 px-5 bg-light">
                     <p>Provide url for an image and description of your service/product:</p>
-                    <label for="image-url" class="mb-2">Image URL</label>
-                    <input type="text" class="form-control" id="image-url" name="image-url">
+                    <label for="image_url" class="mb-2">Image URL</label>
+                    <input type="text" class="form-control" id="image_url" name="image_url"  required >
 
 
-                    <label for="desc-service" class="mb-2">Description of service/product</label>
-                    <textarea name="desc-service" id="desc-service" cols="30" rows="2"
-                              class="form-control"></textarea>
+                    <label for="desc_service" class="mb-2">Description of service/product</label>
+                    <textarea name="desc_service" id="desc_service" cols="30" rows="2"
+                              class="form-control" required ></textarea>
 
-                    <label for="image-url-two" class="mb-2">Image URL</label>
-                    <input type="text" class="form-control" id="image-url-two" name="image-url-two">
+                    <label for="image_url_two" class="mb-2">Image URL</label>
+                    <input type="text" class="form-control" id="image_url_two" name="image_url_two" required>
 
-                    <label for="desc-service-two" class="mb-2">Description of service/product</label>
-                    <textarea name="desc-service" id="desc-service-two" cols="30" rows="2"
-                              class="form-control"></textarea>
+                    <label for="desc_service_two" class="mb-2">Description of service/product</label>
+                    <textarea name="desc_service_two" id="desc_service_two" cols="30" rows="2"
+                              class="form-control" required></textarea>
+
+                    <label for="image_url_three" class="mb-2">Image URL</label>
+                    <input type="text" class="form-control" id="image_url_three" name="image_url_three" required>
 
 
-                    <label for="image-url-three" class="mb-2">Image URL</label>
-                    <input type="text" class="form-control" id="image-url-three" name="image-url-three">
-
-
-                    <label for="desc-service-three" class="mb-2">Description of service/product</label>
-                    <textarea name="desc-service" id="desc-service-three" cols="30" rows="2"
-                              class="form-control"></textarea>
+                    <label for="desc_service-three" class="mb-2">Description of service/product</label>
+                    <textarea name="desc_service_three" id="desc_service_three" cols="30" rows="2"
+                              class="form-control" required></textarea>
 
                 </div>
 
                 <!--Third form-->
                 <div class="col-md-3 py-5 px-5 bg-light   ">
-                    <label for="desc-company" class="mb-2">Provide a description of your company,something people should
-                        be aware of before they contanct you:</label>
-                    <textarea name="desc-company" id="desc-company" cols="30" rows="2"
-                              class="form-control"></textarea>
+                    <label for="desc_company" class="mb-2">Provide a description of your company,something people should
+                        be aware of before they contact you:</label>
+                    <textarea name="desc_company" id="desc_company" cols="30" rows="2"
+                              class="form-control" required></textarea>
 
 
-                    <label for="linkedin" class="mb-2">Linkedin</label>
-                    <input type="text" class="form-control" id="linkedin" name="linkedin">
+                    <label for="linkedin" class="mb-2">LinkedIn</label>
+                    <input type="text" class="form-control" id="linkedin" name="linkedin" required>
 
 
                     <label for="facebook" class="mb-2">Facebook</label>
-                    <input type="text" class="form-control" id="facebook" name="facebook">
+                    <input type="text" class="form-control" id="facebook" name="facebook" required>
 
                     <label for="twitter" class="mb-2">Twitter</label>
-                    <input type="text" class="form-control" id="twitter" name="twitter">
+                    <input type="text" class="form-control" id="twitter" name="twitter" required>
 
                     <label for="google-plus" class="mb-2">Google+</label>
-                    <input type="text" class="form-control" id="google-plus" name="google-plus">
+                    <input type="text" class="form-control" id="google-plus" name="google_plus" required>
 
-                    <input type="submit" class="mt-5 btn btn-warning form-control text-white">
+                    <input type="submit" class="mt-5 btn btn-warning form-control text-white" required>
 
                 </div>
 

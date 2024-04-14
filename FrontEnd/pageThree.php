@@ -1,3 +1,23 @@
+<?php
+
+require_once('../Database/Connection.php');
+
+use Database\Connection as Connection;
+
+
+$ID = $_GET['ID'];
+$sql = "SELECT * FROM users WHERE ID = :ID";
+
+$database = new Connection();
+$connection = $database->getConnection();
+$data = $connection->prepare($sql);
+$data->bindParam(":ID", $ID);
+$data->execute();
+
+$dataBaseData = $data->fetch(PDO::FETCH_ASSOC);
+
+?>
+
 <!doctype html>
 <html lang="en">
 <head>
@@ -12,13 +32,13 @@
 
 <style>
     .background-three {
-        background-image: url("../Design/alesia-kaz-XLm6-fPwK5Q-unsplash.jpg");
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover;
         height: 60vh;
-        background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.3)), url(../Design/alesia-kaz-XLm6-fPwK5Q-unsplash.jpg);
+        background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.3)), url("<?= $dataBaseData['cover_image_url'] ?>");
     }
+
 </style>
 
 <nav class="navbar navbar-expand-lg navbar-light bg- ">
@@ -32,10 +52,17 @@
             </li>
 
             <li class="nav-item">
-                <a class="nav-link" href="#about-us" >About Us</a>
+                <a class="nav-link" href="#about-us">About Us</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="#services" >Services</a>
+                <a class="nav-link" href="#services">
+                    <?php
+                    if ($dataBaseData['services'] == 'services') {
+                        echo 'Services';
+                    } else if ($dataBaseData['services'] == 'products') {
+                        echo 'Products';
+                    } ?>
+                </a>
             </li>
             <li class="nav-item">
                 <a class="nav-link" href="#contact">Contact</a>
@@ -45,22 +72,33 @@
 </nav>
 <div class=" container-fluid background-three  justify-content center">
     <div class="col text-center py-5">
-        <h1 class="text-white display-4  py-5">This is Main Title</h1>
+        <h1 class="text-white display-4 py-5">
+            <?= $dataBaseData['main_title_of_page'] ?>
+        </h1>
     </div>
     <div class="col-12">
-        <h2 class="text-center text-white  py-5">This is a subtitle, it is usually bigger than the main tittle.</h2>
+        <h2 class="text-center text-white  py-5">
+            <?= $dataBaseData['subtitle_of_page'] ?>
+
+        </h2>
     </div>
 </div>
 
 <div class="container-fluid py-4" id="about-us">
     <div class="col">
         <h1 class="text-center">About Us</h1>
-        <p class="text-center">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nisi, perspiciatis?</p>
-        <p class="text-center">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nisi, perspiciatis?</p>
-        <p class="text-center">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nisi, perspiciatis?</p>
+        <p class="text-center">
+            <?= $dataBaseData['something_about_you'] ?>
+        </p>
         <hr>
-        <p class="text-center">Tel:5127156278</p>
-        <p class="text-center">Location: C idaosdjiao</p>
+        <p class="text-center">Tel:
+            <?= $dataBaseData['your_telephone_number'] ?>
+
+        </p>
+        <p class="text-center">Location:
+            <?= $dataBaseData['location'] ?>
+
+        </p>
     </div>
 </div>
 
@@ -68,24 +106,40 @@
     <div class="row ">
         <div class="col">
             <div class="card" style="width: 18rem;">
-                <img class="card-img-top" src="../Design/verne-ho-0LAJfSNa-xQ-unsplash.jpg" alt="Card image cap">
+                <img class="card-img-top" src="
+            <?= $dataBaseData['image_url'] ?>" alt="Card image cap">
                 <div class="card-body">
-                    <h5 class="card-title">Service One Description</h5>
-                    <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem consequatur
-                        iure neque pariatur ut. Alias facere odit tempore voluptate? Aspernatur atque cupiditate
-                        dignissimos eaque, fugiat ipsam iste laborum mollitia nesciunt nihil odit perferendis provident
-                        quisquam velit voluptatibus. Accusantium at deserunt incidunt, itaque iusto maxime minus
-                        mollitia nam repellat veniam voluptas.</p>
+                    <h5 class="card-title">
+                        <?php
+                        if ($dataBaseData['services'] == 'services') {
+                            echo 'Service';
+                        } else if ($dataBaseData['services'] == 'products') {
+                            echo 'Product';
+                        } ?> One
+                    </h5>
+                    <p class="card-text">
+                        <?= $dataBaseData['desc_service'] ?>
+
+                    </p>
                 </div>
             </div>
         </div>
         <div class="col">
             <div class="card" style="width: 18rem;">
-                <img class="card-img-top" src="../Design/scott-graham-OQMZwNd3ThU-unsplash.jpg" alt="Card image cap">
+                <img class="card-img-top" src="
+            <?= $dataBaseData['image_url_two'] ?>" alt="Card image cap">
                 <div class="card-body">
-                    <h5 class="card-title">Card title</h5>
-                    <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis cupiditate
-                        dolorum illo in laborum molestiae? Beatae doloribus enim maiores non?</p>
+                    <h5 class="card-title">
+                        <?php
+                        if ($dataBaseData['services'] == 'services') {
+                            echo 'Service';
+                        } else if ($dataBaseData['services'] == 'products') {
+                            echo 'Product';
+                        } ?> Two
+                    </h5>
+                    <p class="card-text">
+                        <?= $dataBaseData['desc_service_two'] ?>
+                    </p>
                 </div>
 
 
@@ -93,32 +147,40 @@
         </div>
         <div class="col">
             <div class="card" style="width: 18rem;">
-                <img class="card-img-top" src="../Design/israel-andrade-YI_9SivVt_s-unsplash.jpg" alt="Card image cap">
+                <img class="card-img-top" src="
+            <?= $dataBaseData['image_url_three'] ?>" alt="Card image cap">
                 <div class="card-body">
-                    <h5 class="card-title">Service Three Description</h5>
-                    <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. A blanditiis dolores
-                        incidunt laborum laudantium nisi odit, perferendis praesentium temporibus totam, vel vero!
-                        Aliquid asperiores, commodi dolorem dolores doloribus eligendi esse et in, ipsa labore magni
-                        modi molestias mollitia, neque officiis porro provident quaerat quasi quidem rem repellat sed
-                        tempore? Expedita?</p>
+                    <h5 class="card-title">
+                        <?php
+                        if ($dataBaseData['services'] == 'services') {
+                            echo 'Service';
+                        } else if ($dataBaseData['services'] == 'products') {
+                            echo 'Product';
+                        } ?> Three
+                    </h5>
+                    <p class="card-text">
+                        <?= $dataBaseData['desc_service_three'] ?>
+                    </p>
                 </div>
             </div>
         </div>
     </div>
 </div>
 <hr>
-<div class="container-fluid" id="contact" >
+<div class="container-fluid" id="contact">
     <div class="row">
         <div class="col py-5">
             <h3>Contact</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque eligendi laudantium omnis quae, quisquam recusandae rerum sunt suscipit veritatis voluptate! A corporis eveniet illo magni nihil, non placeat qui. Ab aliquam animi asperiores aut, consequuntur dolores ea in laboriosam laborum nam nisi nobis quaerat quibusdam quo reiciendis sapiente ut voluptatibus.</p>
+            <p> <?= $dataBaseData['desc_company'] ?></p>
         </div>
         <div class="col py-5">
             <form class="">
                 <div class="form-group py-2">
                     <label for="exampleInputEmail1">Email address</label>
-                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
-                    <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
+                           placeholder="Enter email">
+                    <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone
+                        else.</small>
                 </div>
                 <div class="form-group py-2">
                     <label for="exampleInputPassword1">Password</label>
@@ -135,6 +197,18 @@
         </div>
     </div>
 </div>
+
+<footer class="bg-dark py-2  ">
+
+    <ul class="justify-content-center d-flex  align-items-center">
+        <li class="mx-2"><a class="ml-2" href="<?= $dataBaseData['linkedin'] ?>">LinkedIn</a></li>
+        <li class="mx-2"><a href="<?= $dataBaseData['facebook'] ?>">Facebook</a></li>
+        <li class="mx-2"><a href="<?= $dataBaseData['twitter'] ?>">Twitter</a></li>
+        <li class="mx-2"><a href="<?= $dataBaseData['google_plus'] ?>">Google+</a></li>
+        <li></li>
+    </ul>
+
+</footer>
 
 
 </body>
