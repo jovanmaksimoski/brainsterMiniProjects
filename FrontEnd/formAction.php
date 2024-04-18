@@ -18,5 +18,5 @@ $data->execute();
 
 $ID = $data->fetch(PDO::FETCH_ASSOC);
 
-header("Location: ./pageThree.php?ID={$ID['ID']}");
+return header("Location: ./pageThree.php?ID={$ID['ID']}");
 

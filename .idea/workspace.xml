@@ -1,16 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="AutoImportSettings">
-    <option name="autoReloadType" value="SELECTIVE" />
-  </component>
   <component name="ChangeListManager">
-    <list default="true" id="bf9917cb-bdbd-4be4-905a-1a19cc97dce5" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/Database/Connection.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Users/Users.php" afterDir="false" />
+    <list default="true" id="1b6feb43-4ffc-44bb-a78d-460e069a7249" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FrontEnd/pageThree.php" beforeDir="false" afterPath="$PROJECT_DIR$/FrontEnd/pageThree.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FrontEnd/pageTwo.php" beforeDir="false" afterPath="$PROJECT_DIR$/FrontEnd/pageTwo.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FrontEnd/formAction.php" beforeDir="false" afterPath="$PROJECT_DIR$/FrontEnd/formAction.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -27,43 +21,24 @@
     <option name="stateVersion" value="1" />
   </component>
   <component name="PhpWorkspaceProjectConfiguration" interpreter_name="C:\php-8.3.2\php.exe" />
-  <component name="ProjectColorInfo">{
-  &quot;customColor&quot;: &quot;&quot;,
-  &quot;associatedIndex&quot;: 4
-}</component>
-  <component name="ProjectId" id="2eunZnaFdIFDTfcwib1mRl2MitZ" />
+  <component name="ProjectColorInfo"><![CDATA[{
+  "customColor": "",
+  "associatedIndex": 4
+}]]></component>
+  <component name="ProjectId" id="2fHmCtdHUf21IsI2C3zQQ6G37UV" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;challenge__15&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
-  },
-  &quot;keyToStringList&quot;: {
-    &quot;DatabaseDriversLRU&quot;: [
-      &quot;mysql&quot;
-    ],
-    &quot;com.intellij.ide.scratch.LRUPopupBuilder$1/SQL Dialect&quot;: [
-      &quot;MySQL&quot;
-    ]
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "challenge__15",
+    "nodejs_package_manager_path": "npm",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
-  <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\xampp\htdocs\brainsterchallenges_jovanmaksimoski-fs15" />
-      <recent name="C:\xampp\htdocs\brainsterchallenges_jovanmaksimoski-fs15\FrontEnd" />
-      <recent name="C:\xampp\htdocs\brainsterchallenges_jovanmaksimoski-fs15\Design" />
-    </key>
-  </component>
+}]]></component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
@@ -74,19 +49,12 @@
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="bf9917cb-bdbd-4be4-905a-1a19cc97dce5" name="Changes" comment="" />
-      <created>1712763390959</created>
+      <changelist id="1b6feb43-4ffc-44bb-a78d-460e069a7249" name="Changes" comment="" />
+      <created>1713466253963</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1712763390959</updated>
-      <workItem from="1712763394600" duration="3819000" />
-      <workItem from="1712767587284" duration="2187000" />
-      <workItem from="1712856184603" duration="599000" />
-      <workItem from="1713014762374" duration="9295000" />
-      <workItem from="1713027638511" duration="333000" />
-      <workItem from="1713028629915" duration="735000" />
-      <workItem from="1713029473646" duration="9026000" />
-      <workItem from="1713082059729" duration="13618000" />
+      <updated>1713466253963</updated>
+      <workItem from="1713466257607" duration="129000" />
     </task>
     <servers />
   </component>
