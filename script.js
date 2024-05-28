@@ -44,6 +44,7 @@ function renderBookList() {
   books.forEach((book) => {
     const listItem = document.createElement("li");
     listItem.textContent = `${book.title} by ${book.author}`;
+    listItem.textContent = `${book.title} by ${book.author}`;
     if (book.maxPages === book.onPage) {
       listItem.style.color = "green";
     } else {
