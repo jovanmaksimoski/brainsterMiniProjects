@@ -21,7 +21,7 @@ $("#start-btn").click(() => {
 const fetchQuestionsWithDelay = () => {
   setTimeout(() => {
     fetchQuestions();
-  }, 500);
+  }, 2000);
 };
 
 const fetchQuestions = () => {
